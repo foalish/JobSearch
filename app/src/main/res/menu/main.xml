@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"     >
+
+
+    <item
+        android:id="@+id/three_lines"
+        android:icon="@drawable/three_lines"
+        android:title="SideBar"
+        app:showAsAction="always"
+        android:layout_gravity="left"
+        android:orderInCategory="1"
+        android:enabled="true"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        android:checkable="true"
+        android:enabled="true"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/notify"
+        android:title="                          Notification                 "
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:checkable="true"
+        android:enabled="true"
+        android:visible="true" />
+
+
+</menu>
