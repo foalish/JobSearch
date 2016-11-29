@@ -10,186 +10,184 @@
     android:fitsSystemWindows="true">
 
 
+    <RelativeLayout
 
-
-<RelativeLayout
-
-    android:layout_width="match_parent"
-    android:layout_height="565dp"
-    android:baselineAligned="false">
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        android:baselineAligned="false">
 
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/card_recycler_view"
-        android:scrollbars="horizontal"
-        android:layout_width="268dp"
-        tools:layout_editor_absoluteY="55dp"
-        android:layout_height="59dp"
-        android:layout_alignParentStart="true" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/card_recycler_view"
+            android:scrollbars="horizontal"
+            android:layout_width="268dp"
+            tools:layout_editor_absoluteY="55dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true" />
 
-    <TextView
-        android:text="  I want to be a..."
-        android:id="@+id/iwanttobea"
-        android:typeface="normal"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textStyle="normal|bold|italic"
-        android:textSize="18sp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="casual"
-        android:layout_width="165dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/card_recycler_view"  />
-
-
-    <ScrollView
-        android:layout_width="220dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="145dp"
-        android:layout_marginStart="175dp"
-        android:fillViewport="true"
-        android:id="@+id/careerDescription">
-        <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:weightSum="1">
-
-            <TextView
-            android:text="Veterinarians or 'Vets' look after the healthcare needs of animals, including dogs, cats and household pets, but also larger animals like horses and cows. Vets can work in Zoos. This is where I add spurious extra content to check if my scroll view works :)"
-            android:typeface="sans"
+        <TextView
+            android:text="  I want to be a..."
+            android:id="@+id/iwanttobea"
+            android:typeface="normal"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textSize="14sp"
-            android:layout_marginStart="10dp"
+            android:textStyle="normal|bold|italic"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="casual"
+            android:layout_width="165dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/card_recycler_view"  />
+
+
+        <ScrollView
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="145dp"
+            android:layout_marginStart="175dp"
+            android:fillViewport="true"
+            android:id="@+id/careerDescription">
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:weightSum="1">
+
+                <TextView
+                android:text="Veterinarians or 'Vets' look after the healthcare needs of animals, including dogs, cats and household pets, but also larger animals like horses and cows. Vets can work in Zoos. This is where I add spurious extra content to check if my scroll view works :)"
+                android:typeface="sans"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="casual"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.68" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:text="Salary when qualified 31,000"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:id="@+id/Salary"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:background="#ededed"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:fontFamily="casual"
+            android:layout_marginEnd="15dp"
+            android:typeface="normal"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_above="@+id/Chat"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_alignStart="@+id/Degree"
+            android:layout_below="@+id/Degree" />
+
+        <TextView
+            android:text="5 year Degree is required to qualify"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:id="@+id/Degree"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="casual"
+            android:layout_gravity="center"
+            android:typeface="normal"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:background="#ededed"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignTop="@+id/tips"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/degree"
+            android:id="@+id/imageView4"
+            android:background="#ededed"
+            android:layout_alignTop="@+id/Degree"
+            android:layout_toEndOf="@+id/tips"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:text="2A* and 1A at A level including Biology and either Chemistry, Physics or Maths"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.68" />
-        </LinearLayout>
-    </ScrollView>
+            android:layout_height="45dp"
+            android:id="@+id/qualificationsneeded"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#48a8f2"
+            android:textStyle="normal|bold|italic"
+            android:fontFamily="casual"
+            android:typeface="serif"
+            android:textSize="16sp"
+            android:layout_below="@+id/careerDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="7dp" />
 
-    <TextView
-        android:text="Salary when qualified 31,000"
-        android:layout_width="185dp"
-        android:layout_height="50dp"
-        android:id="@+id/Salary"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:background="#ededed"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:fontFamily="casual"
-        android:layout_marginEnd="15dp"
-        android:typeface="normal"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:layout_above="@+id/Chat"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/imageView2"
-        android:layout_alignStart="@+id/Degree"
-        android:layout_below="@+id/Degree" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="125dp"
+            android:id="@+id/tips"
+            android:text="TIP. Get some work experience in a Vet's practise before applying to Uni. to increase your chances of getting an offer."
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:paddingStart="20dp"
+            android:fontFamily="casual"
+            android:typeface="serif"
+            android:layout_above="@+id/Chat"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:text="5 year Degree is required to qualify"
-        android:layout_width="200dp"
-        android:layout_height="65dp"
-        android:id="@+id/Degree"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:fontFamily="casual"
-        android:layout_gravity="center"
-        android:typeface="normal"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:background="#ededed"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:layout_alignTop="@+id/tips"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/imageView4" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/pound_sign"
+            android:id="@+id/imageView2"
+            android:background="#ededed"
+            android:layout_below="@+id/Degree"
+            android:layout_toEndOf="@+id/tips" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/degree"
-        android:id="@+id/imageView4"
-        android:background="#ededed"
-        android:layout_alignTop="@+id/Degree"
-        android:layout_toEndOf="@+id/tips"
-        android:layout_marginStart="10dp" />
+        <Button
+            android:text="Message others like you"
+            android:layout_width="400dp"
+            android:layout_height="65dp"
+            android:background="#48a8f2"
+            android:fontFamily="casual"
+            android:typeface="sans"
+            android:textSize="17sp"
+            android:paddingRight="35dp"
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/Chat"
+            tools:text="Message others like you"
+            android:textAlignment="center"
+            android:drawableEnd="@drawable/ic_people_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="7dp" />
 
-    <TextView
-        android:text="2A* and 1A at A level including Biology and either Chemistry, Physics or Maths"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/qualificationsneeded"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="#48a8f2"
-        android:textStyle="normal|bold|italic"
-        android:fontFamily="casual"
-        android:typeface="serif"
-        android:textSize="16sp"
-        android:layout_below="@+id/careerDescription"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="7dp" />
+        <TextView
+            android:text=" Veterinary Surgeon"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="22sp"
+            android:id="@+id/career"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_below="@+id/iwanttobea"
+            android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="180dp"
-        android:layout_height="125dp"
-        android:id="@+id/tips"
-        android:text="TIP. Get some work experience in a Vet's practise before applying to Uni. to increase your chances of getting an offer."
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:paddingStart="20dp"
-        android:fontFamily="casual"
-        android:typeface="serif"
-        android:layout_above="@+id/Chat"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="8dp" />
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:srcCompat="@mipmap/vet_surgeon"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/career"
+            android:layout_alignParentStart="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/pound_sign"
-        android:id="@+id/imageView2"
-        android:background="#ededed"
-        android:layout_below="@+id/Degree"
-        android:layout_toEndOf="@+id/tips" />
+    </RelativeLayout>
 
-    <Button
-        android:text="Message others like you"
-        android:layout_width="400dp"
-        android:layout_height="65dp"
-        android:background="#48a8f2"
-        android:fontFamily="casual"
-        android:typeface="sans"
-        android:textSize="17sp"
-        android:paddingRight="35dp"
-        android:textColor="@color/cardview_light_background"
-        android:id="@+id/Chat"
-        tools:text="Message others like you"
-        android:textAlignment="center"
-        android:drawableEnd="@drawable/ic_people_black_24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="7dp" />
-
-    <TextView
-        android:text=" Veterinary Surgeon"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:textSize="22sp"
-        android:id="@+id/career"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:layout_below="@+id/iwanttobea"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        app:srcCompat="@mipmap/vet_surgeon"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/career"
-        android:layout_alignParentStart="true" />
-
-</RelativeLayout>
-
-    </android.support.design.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>

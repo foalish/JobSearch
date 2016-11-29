@@ -22,17 +22,17 @@
         android:layout_height="188dp"
         android:id="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/iv"
-        android:layout_width="300dp"
-        android:layout_height="107dp"
-        android:contentDescription="" />
-
     <TextView
         android:text="\';\';\;"
         android:layout_width="191dp"
         android:layout_height="81dp"
         android:id="@+id/textView2"
         tools:text=";l;l;l" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="300dp"
+        android:layout_height="107dp"
+        android:contentDescription="" />
 
 </android.support.design.widget.CoordinatorLayout>

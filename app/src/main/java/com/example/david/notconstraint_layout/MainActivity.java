@@ -10,26 +10,23 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     private final String android_image_urls[] = {
-            "https://api.learn2crack.com/android/images/donut.png",
-            "https://api.learn2crack.com/android/images/eclair.png",
-            "https://api.learn2crack.com/android/images/froyo.png",
-            "https://api.learn2crack.com/android/images/ginger.png",
-            "https://api.learn2crack.com/android/images/honey.png",
-            "https://api.learn2crack.com/android/images/icecream.png",
-            "https://api.learn2crack.com/android/images/jellybean.png",
-            "https://api.learn2crack.com/android/images/kitkat.png",
-            "https://api.learn2crack.com/android/images/lollipop.png",
-            "https://api.learn2crack.com/android/images/marshmallow.png"
+            "http://davidfoale.info/images/app_images/vetsurgeon.jpg",
+            "http://davidfoale.info/images/app_images/hairdresser.jpg",
+            "http://davidfoale.info/images/app_images/vetsurgeon.jpg",
+            "http://davidfoale.info/images/app_images/hairdresser.jpg",
+            "http://davidfoale.info/images/app_images/vetsurgeon.jpg",
+            "http://davidfoale.info/images/app_images/hairdresser.jpg",
+            "http://davidfoale.info/images/app_images/vetsurgeon.jpg",
+            "http://davidfoale.info/images/app_images/hairdresser.jpg",
+            "http://davidfoale.info/images/app_images/vetsurgeon.jpg",
+            "http://davidfoale.info/images/app_images/hairdresser.jpg",
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initViews();
     }
 
@@ -41,23 +38,20 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
     private void initViews() {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);
 
 
-
-        RecyclerView.LayoutManager layoutManager
-                = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
         ArrayList androidVersions = prepareData();
         DataAdapter adapter = new DataAdapter(getApplicationContext(), androidVersions);
         recyclerView.setAdapter(adapter);
-
     }
+
+
 
     private ArrayList prepareData() {
 

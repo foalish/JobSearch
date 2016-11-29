@@ -36,6 +36,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         viewHolder.img_android.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 // Intent intent = new Intent(DataAdapter.this, GetDetails.class);
                 Intent intent = new Intent (context, SecondActivity.class);
                 //      in.putExtra("USE_A_CONSTANT_HERE_AS_KEY", ???????????);
